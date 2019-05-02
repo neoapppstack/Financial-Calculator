@@ -191,10 +191,11 @@
 
     .navbar-brand{
         text-transform: uppercase;
-        font-size: $font-size-small;
+        font-size: $font-size-h5;
         padding-top: $padding-base-vertical;
         padding-bottom: $padding-base-vertical;
         line-height: $line-height-nav-link;
+        font-weight: $font-weight-bold;
     }
 
     .navbar-toggler{
