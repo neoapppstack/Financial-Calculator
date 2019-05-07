@@ -8,14 +8,12 @@ declare interface RouteInfo {
 }
 export const ROUTES: RouteInfo[] = [
     { path: '/dashboard', title: 'Dashboard',  icon: 'design_app', class: '' },
-    { path: '/icons', title: 'Icons',  icon:'education_atom', class: '' },
-    { path: '/maps', title: 'Maps',  icon:'location_map-big', class: '' },
-    { path: '/notifications', title: 'Notifications',  icon:'ui-1_bell-53', class: '' },
-
-    { path: '/user-profile', title: 'User Profile',  icon:'users_single-02', class: '' },
-    { path: '/table-list', title: 'Table List',  icon:'design_bullet-list-67', class: '' },
-    { path: '/typography', title: 'Typography',  icon:'text_caps-small', class: '' },
-    { path: 'http://neoappstack.com', title: 'Visit NeoAppStack',  icon:'objects_spaceship', class: 'active active-pro' }
+    { path: '/general-finance', title: 'General Finance',  icon: 'education_atom', class: '' },
+    { path: '/banking', title: 'Banking',  icon: 'location_map-big', class: '' },
+    { path: '/stocks-bonds', title: 'Stocks/Bonds',  icon: 'ui-1_bell-53', class: '' },
+    { path: '/corporate-business', title: 'Corporate/Business',  icon: 'users_single-02', class: '' },
+    { path: '/financial-markets', title: 'Financial Markets',  icon: 'design_bullet-list-67', class: '' },
+    { path: 'http://neoappstack.com', title: 'Visit NeoAppStack',  icon: 'objects_spaceship', class: 'active active-pro' }
 
 ];
 

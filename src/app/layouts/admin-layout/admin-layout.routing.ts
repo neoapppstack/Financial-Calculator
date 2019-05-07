@@ -1,21 +1,30 @@
 import { Routes } from '@angular/router';
 
 import { DashboardComponent } from '../../dashboard/dashboard.component';
-import { UserProfileComponent } from '../../user-profile/user-profile.component';
-import { TableListComponent } from '../../table-list/table-list.component';
-import { TypographyComponent } from '../../typography/typography.component';
-import { IconsComponent } from '../../icons/icons.component';
-import { MapsComponent } from '../../maps/maps.component';
-import { NotificationsComponent } from '../../notifications/notifications.component';
-import { UpgradeComponent } from '../../upgrade/upgrade.component';
 
 export const AdminLayoutRoutes: Routes = [
-    { path: 'dashboard',      component: DashboardComponent },
-    { path: 'user-profile',   component: UserProfileComponent },
-    { path: 'table-list',     component: TableListComponent },
-    { path: 'typography',     component: TypographyComponent },
-    { path: 'icons',          component: IconsComponent },
-    { path: 'maps',           component: MapsComponent },
-    { path: 'notifications',  component: NotificationsComponent },
-    { path: 'upgrade',        component: UpgradeComponent }
+    {
+      path: 'dashboard',
+      component: DashboardComponent
+    },
+    {
+      path: 'general-finance',
+      loadChildren: './../../general-finance/general-finance.module#GeneralFinanceModule',
+    },
+    {
+      path: 'banking',
+      loadChildren: './../../banking/banking.module#BankingModule',
+    },
+    {
+      path: 'stocks-bonds',
+      loadChildren: './../../stocks-bonds/stocks-bonds.module#StocksBondsModule',
+    },
+    {
+      path: 'corporate-business',
+      loadChildren: './../../corporate-business/corporate-business.module#CorporateBusinessModule',
+    },
+    {
+      path: 'financial-markets',
+      loadChildren: './../../financial-markets/financial-markets.module#FinancialMarketsModule',
+    }
 ];
