@@ -2,15 +2,11 @@
 </div>
 <div class="main-content">
   <div class="row">
-    <div class="col-md-12">
-      <div class="card ">
-        <div class="card-header ">
-          Test
-        </div>
-        <div class="card-body ">
-          <div id="map" class="map"></div>
-        </div>
-      </div>
+    <!-- formula cards -->
+    <div class="col-md-3" *ngFor="let generalFormula of generalFormulaList">
+      <app-formula-card [formulaData]=generalFormula></app-formula-card>
     </div>
+    <!-- formula card ends -->
   </div>
+  <!-- Row ends  -->
 </div>

@@ -15,7 +15,7 @@
     top: 0;
     height: 100%;
     bottom: 0;
-    width: 260px;
+    width: 300px;
     left: 0;
     z-index: 1030;
 
@@ -23,7 +23,7 @@
         position: relative;
         height: calc(100vh - 75px);
         overflow: auto;
-        width: 260px;
+        width: 300px;
         z-index: 4;
         padding-bottom: 100px;
 
@@ -135,6 +135,7 @@
         p{
             margin: 0;
             line-height: 30px;
+            font-weight: $font-weight-semi;
             position: relative;
             display: block;
             height: auto;

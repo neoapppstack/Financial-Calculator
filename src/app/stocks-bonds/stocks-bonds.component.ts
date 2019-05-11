@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderService } from '../_service/navbar/header.service';
 
 @Component({
   selector: 'app-stocks-bonds',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StocksBondsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private header: HeaderService) { }
 
   ngOnInit() {
+    this.header.changeHeader('STOCKS/BONDS');
   }
 
 }

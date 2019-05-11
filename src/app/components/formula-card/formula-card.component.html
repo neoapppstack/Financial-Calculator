@@ -1,0 +1,14 @@
+<div class="card  card-tasks" style="min-height: 150px" [routerLink]="[formulaData.url]">
+  <div class="card-header">
+    <h5 class="card-category">{{formulaData.name}}</h5>
+  </div>
+  <div class="card-body">
+    {{formulaData.description | slice:0:150}} ...
+  </div>
+  <div class="card-footer ">
+    <hr>
+    <div class="stats">
+      <i class="now-ui-icons loader_refresh spin"></i> {{formulaData.id}}
+    </div>
+  </div>
+</div>

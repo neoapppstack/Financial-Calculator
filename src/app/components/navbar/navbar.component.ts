@@ -3,6 +3,7 @@ import { ROUTES } from '../sidebar/sidebar.component';
 import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
 import { Router } from '@angular/router';
 import Chart from 'chart.js';
+import { HeaderService } from '../../_service/navbar/header.service';
 
 @Component({
   selector: 'app-navbar',
@@ -18,12 +19,15 @@ export class NavbarComponent implements OnInit {
 
     public isCollapsed = true;
 
-    constructor(location: Location,  private element: ElementRef, private router: Router) {
+    navBarHeaderValue: String;
+
+    constructor(location: Location, private header: HeaderService, private element: ElementRef, private router: Router) {
       this.location = location;
-          this.sidebarVisible = false;
+      this.sidebarVisible = false;
     }
 
     ngOnInit(){
+      this.header.currentHeader.subscribe(headerValue => this.navBarHeaderValue = headerValue);
       this.listTitles = ROUTES.filter(listTitle => listTitle);
       const navbar: HTMLElement = this.element.nativeElement;
       this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
@@ -138,18 +142,4 @@ export class NavbarComponent implements OnInit {
         }
     };
 
-    getTitle(){
-      var titlee = this.location.prepareExternalUrl(this.location.path());
-      if(titlee.charAt(0) === '#'){
-          titlee = titlee.slice( 2 );
-      }
-      titlee = titlee.split('/').pop();
-
-      for(var item = 0; item < this.listTitles.length; item++){
-          if(this.listTitles[item].path === titlee){
-              return this.listTitles[item].title;
-          }
-      }
-      return 'Dashboard';
-    }
 }
