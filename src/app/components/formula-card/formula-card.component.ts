@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit, Input } from '@angular/core';
 import { FormulaData } from './../../_models/formula/formula-data';
 
@@ -8,11 +9,15 @@ import { FormulaData } from './../../_models/formula/formula-data';
 })
 export class FormulaCardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  @Input() formulaData: FormulaData;
+@Input() formulaData: FormulaData;
 
-  ngOnInit() {
-  }
+ngOnInit() {
+}
+
+navigateTo (url: String) {
+  this.router.navigate([url]);
+}
 
 }

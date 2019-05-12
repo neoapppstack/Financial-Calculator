@@ -6,7 +6,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { AnnuityFutureValueComponent } from './formula-calculator/general-finance/annuity/annuity-future-value/annuity-future-value.component';
 
 @NgModule({
   imports: [
@@ -18,7 +17,6 @@ import { AnnuityFutureValueComponent } from './formula-calculator/general-financ
     FooterComponent,
     NavbarComponent,
     SidebarComponent,
-    AnnuityFutureValueComponent
   ],
   exports: [
     FooterComponent,

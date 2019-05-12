@@ -18,17 +18,14 @@ export class GeneralFinanceComponent implements OnInit {
     private header: HeaderService,
     private formulaService: FormulaService
     ) {
-      this.generalFormulaList = this.formulaService.getGeneralFormula();
-      console.log(this.generalFormulaList);
-    }
+    this.generalFormulaList = this.formulaService.getGeneralFormula();
+  }
 
   ngOnInit() {
     this.header.changeHeader('GENERAL FINANCE');
-
   }
 
-  navidateToRoute(url: String) {
+  navigateToRoute(url: String) {
     this.router.navigate([url]);
   }
-
 }
