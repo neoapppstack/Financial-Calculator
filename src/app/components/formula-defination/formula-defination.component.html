@@ -1,28 +1,13 @@
 <div class="card">
     <div class="card-header">
-       <h5 class="title">Future Value of Annuity</h5>
+       <h5 class="title">{{formulaDefination.title}}</h5>
     </div>
     <div class="card-body">
        <div class="row">
           <div class="col-md-12">
-             <p>
-                The future value of an annuity formula is used to calculate what the value at a future date would be for a series of periodic payments.
-             </p>
-             <p>
-                The future value of an annuity formula assumes that
-             </p>
-             <p>
-                1. The rate does not change
-             </p>
-             <p>
-                2. The first payment is one period away
-             </p>
-             <p>
-                3. The periodic payment does not change
-             </p>
-             <p>
-                If the rate or periodic payment does change, then the sum of the future value of each individual cash flow would need to be calculated to determine the future value of the annuity. If the first cash flow, or payment, is made immediately, the future value of annuity due formula would be used.
-             </p>
+            <p *ngFor="let defination of formulaDefination.defination">
+              {{defination}}
+            </p>
           </div>
        </div>
     </div>

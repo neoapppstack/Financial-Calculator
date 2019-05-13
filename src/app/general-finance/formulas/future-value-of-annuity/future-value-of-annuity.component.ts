@@ -1,3 +1,5 @@
+import { FormulaDefination } from './../../../_models/formula/formula-defination';
+import { GeneralFormulaDefinationService } from './../../../_service/formula/general-formula-defination.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FutureValueOfAnnuityComponent implements OnInit {
 
-  constructor() { }
+  formulaDefination: FormulaDefination;
+
+  constructor(private formulaDefinationService: GeneralFormulaDefinationService ) { }
 
   ngOnInit() {
+    this.formulaDefination = this.formulaDefinationService.getFutureValueOfAnnuityDef();
   }
 
 }
