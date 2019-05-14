@@ -11,7 +11,7 @@ export class FutureValueOfAnnuityContinuousCompoundingComponent implements OnIni
 
   formulaDefination: FormulaDefination;
 
-  constructor(private formulaDefinationService: GeneralFormulaDefinationService ) { }
+  constructor(private formulaDefinationService: GeneralFormulaDefinationService) { }
 
   ngOnInit() {
     this.formulaDefination = this.formulaDefinationService.getFutureValueOfAnnuityContinuousCompoundingDef();

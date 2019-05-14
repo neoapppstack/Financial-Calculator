@@ -3,18 +3,18 @@ import { FormulaDefination } from './../../../_models/formula/formula-defination
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-no-of-periods-of-annuity-from-fv',
-  templateUrl: './no-of-periods-of-annuity-from-fv.component.html',
-  styleUrls: ['./no-of-periods-of-annuity-from-fv.component.scss']
+  selector: 'app-annuity-payment-from-future-value',
+  templateUrl: './annuity-payment-from-future-value.component.html',
+  styleUrls: ['./annuity-payment-from-future-value.component.scss']
 })
-export class NoOfPeriodsOfAnnuityFromFVComponent implements OnInit {
+export class AnnuityPaymentFromFutureValueComponent implements OnInit {
 
   formulaDefination: FormulaDefination;
 
   constructor(private formulaDefinationService: GeneralFormulaDefinationService) { }
 
   ngOnInit() {
-    this.formulaDefination = this.formulaDefinationService.getNoOfPeriodsOfAnnuityFromFVComponentDef();
+    this.formulaDefination = this.formulaDefinationService.getAnnuityPaymentFromFutureValueDef();
   }
 
 }
