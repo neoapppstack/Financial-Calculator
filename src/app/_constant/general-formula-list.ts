@@ -6,7 +6,7 @@ export const GeneralFormulaList: FormulaData[] = [
     name: 'Annuity - Future Value',
     description: `The future value of an annuity formula is used to calculate what the value
     at a future date would be for a series of periodic payments.`,
-    url: '/general-finance/future-value',
+    url: '/general-finance/future-value-of-annuity',
     other: 'Other data',
     iconName: 'mdi-calculator'
   },
@@ -36,7 +36,7 @@ export const GeneralFormulaList: FormulaData[] = [
     An annuity is a series of periodic payments that are received at a future date. The present value
     portion of the formula is the initial payout, with an example being the original payout on an
     amortized loan.`,
-    url: '/general-finance/annuity_payment_formula',
+    url: '/general-finance/annuity-payment-formula',
     other: 'Other data',
     iconName: 'mdi-calculator'
   },
@@ -54,7 +54,7 @@ export const GeneralFormulaList: FormulaData[] = [
     name: 'Annuity (PV) - Solve for n',
     description: `The solve for n, or number of periods, formula shown above is used to determine
     the number of periods on an annuity using the present value, periodic payment, and periodic rate.`,
-    url: '/general-finance/number-of-periods-of-annuity-from-present-value',
+    url: '/general-finance/no-of-periods-of-annuity-from-pv',
     other: 'Other data',
     iconName: 'mdi-calculator'
   },
@@ -64,7 +64,7 @@ export const GeneralFormulaList: FormulaData[] = [
     description: `The present value of annuity formula determines the value of a series of future periodic
     payments at a given time. The present value of annuity formula relies on the concept of time value of
     money, in that one dollar present day is worth more than that same dollar at a future date.`,
-    url: '/general-finance/present_value_of_annuity',
+    url: '/general-finance/present-value-of-annuity',
     other: 'Other data',
     iconName: 'mdi-calculator'
   },
@@ -91,7 +91,7 @@ export const GeneralFormulaList: FormulaData[] = [
     name: 'Annuity Due - Present Value',
     description: `The formula for the present value of an annuity due, sometimes referred to as an immediate
     annuity, is used to calculate a series of periodic payments, or cash flows, that start immediately`,
-    url: 'pages/general-finance/present_value_of_annuity_due',
+    url: '/general-finance/present-value-of-annuity-due',
     other: 'Other data',
     iconName: 'mdi-calculator'
   },
@@ -245,7 +245,7 @@ export const GeneralFormulaList: FormulaData[] = [
     name: 'Present Value',
     description: `Present Value (PV) is a formula used in Finance that calculates the present day value of
     an amount that is received at a future date`,
-    url: '/general-finance/present_value',
+    url: '/general-finance/present-value',
     other: 'Other data',
     iconName: 'mdi-calculator'
   },
@@ -272,7 +272,7 @@ export const GeneralFormulaList: FormulaData[] = [
     name: 'Rule of 72',
     description: `The Rule of 72 is a simple formula used to estimate the length of time required to double
     an investment`,
-    url: '/general-finance/rule-of-72',
+    url: '/general-finance/rule-of-seventy-two',
     other: 'Other data',
     iconName: 'mdi-calculator'
   },
@@ -281,7 +281,7 @@ export const GeneralFormulaList: FormulaData[] = [
     name: 'Weighted Average',
     description: `The weighted average formula is used to calculate the average value of a particular set of
     numbers with different levels of relevance`,
-    url: '/general-finance/weighted_average',
+    url: '/general-finance/weighted-average',
     other: 'Other data',
     iconName: 'mdi-calculator'
   }
