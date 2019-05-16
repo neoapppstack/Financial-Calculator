@@ -1,3 +1,4 @@
+import { GeneralFormulaDefinationService } from './../../../_service/formula/general-formula-defination.service';
 import { FormulaDefination } from './../../../_models/formula/formula-defination';
 import { Component, OnInit } from '@angular/core';
 
@@ -10,9 +11,12 @@ export class WeightedAverageComponent implements OnInit {
 
   formulaDefination: FormulaDefination;
 
-  constructor() { }
+  constructor(
+    private formulaDefinationService: GeneralFormulaDefinationService
+  ) { }
 
   ngOnInit() {
+    this.formulaDefination = this.formulaDefinationService.getWeightedAverageDef();
   }
 
 }
