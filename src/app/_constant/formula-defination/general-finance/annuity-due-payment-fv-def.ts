@@ -3,6 +3,7 @@ import { FormulaDefination } from './../../../_models/formula/formula-defination
 export const AnnuityDuePaymentFvDef: FormulaDefination = {
   id: 1,
   title: 'Annuity Due Payment - FV',
+  subtitle: 'Annuity Due Payment - FV',
   defination: [`The annuity due payment formula using future value is used to calculate
   each equal cash flow or payment of a series of cash flows when the future value is known.
   This formula is specific to annuities where the initial cash flow is received immediately.`,
