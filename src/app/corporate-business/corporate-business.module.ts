@@ -1,3 +1,4 @@
+import { FormulaCardModule } from './../components/formula-card/formula-card.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -8,7 +9,8 @@ import { CorporateBusinessComponent } from './corporate-business.component';
   declarations: [CorporateBusinessComponent],
   imports: [
     CommonModule,
-    CorporateBusinessRoutingModule
+    CorporateBusinessRoutingModule,
+    FormulaCardModule
   ]
 })
 export class CorporateBusinessModule { }
