@@ -1,11 +1,10 @@
+import { RealRateOfReturnComponent } from './real-rate-of-return.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { RealRateOfReturnCalComponent } from './real-rate-of-return-cal/real-rate-of-return-cal.component';
-
 const routes: Routes = [
   {
     path: '',
-    component: RealRateOfReturnCalComponent
+    component: RealRateOfReturnComponent
   }
 ];
 

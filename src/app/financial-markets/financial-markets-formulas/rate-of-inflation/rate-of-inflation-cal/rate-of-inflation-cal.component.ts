@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { FormulaDefination } from './../../../../_models/formula/formula-defination';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-rate-of-inflation-cal',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rate-of-inflation-cal.component.scss']
 })
 export class RateOfInflationCalComponent implements OnInit {
+
+  @Input() formulaDefination: FormulaDefination;
 
   constructor() { }
 

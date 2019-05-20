@@ -21,7 +21,7 @@ const routes: Routes = [
   },
   {
     path: 'contribution-margin',
-    loadChildren: './corporate-business-formulas/contribution-margin/contribution-margin.module#contribution-margin'
+    loadChildren: './corporate-business-formulas/contribution-margin/contribution-margin.module#ContributionMarginModule'
   },
   {
     path: 'current-ratio',

@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { RateOfInflationCalComponent } from './rate-of-inflation-cal/rate-of-inf
   declarations: [RateOfInflationComponent, RateOfInflationCalComponent],
   imports: [
     CommonModule,
-    RateOfInflationRoutingModule
+    RateOfInflationRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class RateOfInflationModule { }
