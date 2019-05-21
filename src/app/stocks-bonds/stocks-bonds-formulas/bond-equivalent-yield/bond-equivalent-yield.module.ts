@@ -1,4 +1,4 @@
-import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
+import { FormulaDefinitionModule } from '../../../components/formula-definition/formula-definition.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -11,7 +11,7 @@ import { BondEquivalentYieldCalComponent } from './bond-equivalent-yield-cal/bon
   imports: [
     CommonModule,
     BondEquivalentYieldRoutingModule,
-    FormulaDefinationModule
+    FormulaDefinitionModule
   ]
 })
 export class BondEquivalentYieldModule { }

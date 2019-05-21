@@ -1,5 +1,5 @@
-import { FormulaDefination } from './../../../_models/formula/formula-defination';
-import { StocksBondsFormulaDefinationService } from './../../../_service/formula/stocks-bonds-defination.service';
+import { FormulaDefinition } from './../../../_models/formula/formula-definition';
+import { StocksBondsFormulaDefinitionService } from '../../../_service/formula/stocks-bonds-definition.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,14 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BidAskSpreadComponent implements OnInit {
 
-  formulaDefination: FormulaDefination;
+  formulaDefinition: FormulaDefinition;
 
   constructor(
-    private formulaDefinationService: StocksBondsFormulaDefinationService
+    private formulaDefinitionService: StocksBondsFormulaDefinitionService
   ) { }
 
   ngOnInit() {
-    this.formulaDefination = this.formulaDefinationService.getBidAskSpreadDef();
+    this.formulaDefinition = this.formulaDefinitionService.getBidAskSpreadDef();
   }
 
 }

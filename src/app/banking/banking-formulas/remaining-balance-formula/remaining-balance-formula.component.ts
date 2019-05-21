@@ -1,5 +1,5 @@
-import { FormulaDefination } from './../../../_models/formula/formula-defination';
-import { BankingFormulaDefinationService } from './../../../_service/formula/banking-formula-defination.service';
+import { FormulaDefinition } from './../../../_models/formula/formula-definition';
+import { BankingFormulaDefinitionService } from './../../../_service/formula/banking-formula-definition.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,14 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RemainingBalanceFormulaComponent implements OnInit {
 
-  formulaDefination: FormulaDefination;
+  formulaDefinition: FormulaDefinition;
 
   constructor(
-    private formulaDefinationService: BankingFormulaDefinationService
+    private formulaDefinitionService: BankingFormulaDefinitionService
   ) { }
 
   ngOnInit() {
-    this.formulaDefination = this.formulaDefinationService.getRemainingBalanceFormulaDef();
+    this.formulaDefinition = this.formulaDefinitionService.getRemainingBalanceFormulaDef();
   }
 
 }

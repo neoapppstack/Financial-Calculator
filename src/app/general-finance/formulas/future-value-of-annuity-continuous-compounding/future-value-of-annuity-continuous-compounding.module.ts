@@ -1,4 +1,4 @@
-import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
+import { FormulaDefinitionModule } from '../../../components/formula-definition/formula-definition.module';
 import { FutureValueOfAnnuityContinuousRoutingModule } from './future-value-of-annuity-continuous-compounding-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -10,7 +10,7 @@ import { FutureValueOfAnnuityContinuousCompoundingCalComponent } from './future-
   imports: [
     CommonModule,
     FutureValueOfAnnuityContinuousRoutingModule,
-    FormulaDefinationModule
+    FormulaDefinitionModule
   ]
 })
 export class FutureValueOfAnnuityContinuousCompoundingModule { }

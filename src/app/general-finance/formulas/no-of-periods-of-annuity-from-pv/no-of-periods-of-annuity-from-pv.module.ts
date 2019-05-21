@@ -4,14 +4,14 @@ import { CommonModule } from '@angular/common';
 import { NoOfPeriodsOfAnnuityFromPvRoutingModule } from './no-of-periods-of-annuity-from-pv-routing.module';
 import { NoOfPeriodsOfAnnuityFromPvComponent } from './no-of-periods-of-annuity-from-pv.component';
 import { NoOfPeriodsOfAnnuityFromPvCalComponent } from './no-of-periods-of-annuity-from-pv-cal/no-of-periods-of-annuity-from-pv-cal.component';
-import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
+import { FormulaDefinitionModule } from '../../../components/formula-definition/formula-definition.module';
 
 @NgModule({
   declarations: [NoOfPeriodsOfAnnuityFromPvComponent, NoOfPeriodsOfAnnuityFromPvCalComponent],
   imports: [
     CommonModule,
     NoOfPeriodsOfAnnuityFromPvRoutingModule,
-    FormulaDefinationModule
+    FormulaDefinitionModule
   ]
 })
 export class NoOfPeriodsOfAnnuityFromPvModule { }

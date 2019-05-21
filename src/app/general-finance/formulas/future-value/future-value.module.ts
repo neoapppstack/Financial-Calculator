@@ -4,14 +4,14 @@ import { CommonModule } from '@angular/common';
 import { FutureValueRoutingModule } from './future-value-routing.module';
 import { FutureValueComponent } from './future-value.component';
 import { FutureValueCalComponent } from './future-value-cal/future-value-cal.component';
-import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
+import { FormulaDefinitionModule } from '../../../components/formula-definition/formula-definition.module';
 
 @NgModule({
   declarations: [FutureValueComponent, FutureValueCalComponent],
   imports: [
     CommonModule,
     FutureValueRoutingModule,
-    FormulaDefinationModule
+    FormulaDefinitionModule
   ]
 })
 export class FutureValueModule { }

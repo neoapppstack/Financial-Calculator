@@ -1,4 +1,4 @@
-import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
+import { FormulaDefinitionModule } from '../../../components/formula-definition/formula-definition.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -11,7 +11,7 @@ import { RuleOfSeventyTwoCalComponent } from './rule-of-seventy-two-cal/rule-of-
   imports: [
     CommonModule,
     RuleOfSeventyTwoRoutingModule,
-    FormulaDefinationModule
+    FormulaDefinitionModule
   ]
 })
 export class RuleOfSeventyTwoModule { }

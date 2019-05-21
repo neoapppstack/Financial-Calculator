@@ -1,4 +1,4 @@
-import { FormulaDefination } from './../../../../_models/formula/formula-defination';
+import { FormulaDefinition } from './../../../../_models/formula/formula-definition';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LoanToValueRatioCalComponent implements OnInit {
 
-  @Input() formulaDefination: FormulaDefination;
+  @Input() formulaDefinition: FormulaDefinition;
 
   constructor() { }
 

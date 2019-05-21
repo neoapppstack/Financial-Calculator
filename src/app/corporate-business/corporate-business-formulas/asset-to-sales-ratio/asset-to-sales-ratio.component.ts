@@ -1,5 +1,5 @@
-import { FormulaDefination } from './../../../_models/formula/formula-defination';
-import { CorporateFormulaDefinationService } from './../../../_service/formula/corporate-formula-defination.service';
+import { FormulaDefinition } from './../../../_models/formula/formula-definition';
+import { CorporateFormulaDefinitionService } from './../../../_service/formula/corporate-formula-definition.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,14 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AssetToSalesRatioComponent implements OnInit {
 
-  formulaDefination: FormulaDefination;
+  formulaDefinition: FormulaDefinition;
 
   constructor(
-    private formulaDefinationService: CorporateFormulaDefinationService
+    private formulaDefinitionService: CorporateFormulaDefinitionService
   ) { }
 
   ngOnInit() {
-    this.formulaDefination = this.formulaDefinationService.getAssetToSalesRatioDef();
+    this.formulaDefinition = this.formulaDefinitionService.getAssetToSalesRatioDef();
   }
 
 }

@@ -1,5 +1,5 @@
-import { StocksBondsFormulaDefinationService } from './../../../_service/formula/stocks-bonds-defination.service';
-import { FormulaDefination } from './../../../_models/formula/formula-defination';
+import { StocksBondsFormulaDefinitionService } from '../../../_service/formula/stocks-bonds-definition.service';
+import { FormulaDefinition } from './../../../_models/formula/formula-definition';
 import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-zero-coupon-bond-effective-yield',
@@ -8,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ZeroCouponBondEffectiveYieldComponent implements OnInit {
 
-  formulaDefination: FormulaDefination;
+  formulaDefinition: FormulaDefinition;
 
   constructor(
-    private formulaDefinationService: StocksBondsFormulaDefinationService
+    private formulaDefinitionService: StocksBondsFormulaDefinitionService
   ) { }
 
   ngOnInit() {
-    this.formulaDefination = this.formulaDefinationService.getZeroCouponBondEffectiveYieldDef();
+    this.formulaDefinition = this.formulaDefinitionService.getZeroCouponBondEffectiveYieldDef();
   }
 
 }

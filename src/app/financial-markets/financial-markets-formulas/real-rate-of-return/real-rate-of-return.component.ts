@@ -1,5 +1,5 @@
-import { FinancialMarketFormulaDefinationService } from './../../../_service/formula/financial-markets-defination.service';
-import { FormulaDefination } from './../../../_models/formula/formula-defination';
+import { FinancialMarketFormulaDefinitionService } from '../../../_service/formula/financial-markets-definition.service';
+import { FormulaDefinition } from './../../../_models/formula/formula-definition';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,14 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RealRateOfReturnComponent implements OnInit {
 
-  formulaDefination: FormulaDefination;
+  formulaDefinition: FormulaDefinition;
 
   constructor(
-    private formulaDefinationService: FinancialMarketFormulaDefinationService
+    private formulaDefinitionService: FinancialMarketFormulaDefinitionService
   ) { }
 
   ngOnInit() {
-    this.formulaDefination = this.formulaDefinationService.getRealRateOfReturnDef();
+    this.formulaDefinition = this.formulaDefinitionService.getRealRateOfReturnDef();
+
   }
 
 }

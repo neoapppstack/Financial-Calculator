@@ -1,5 +1,5 @@
-import { BankingFormulaDefinationService } from './../../../_service/formula/banking-formula-defination.service';
-import { FormulaDefination } from './../../../_models/formula/formula-defination';
+import { BankingFormulaDefinitionService } from './../../../_service/formula/banking-formula-definition.service';
+import { FormulaDefinition } from './../../../_models/formula/formula-definition';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,14 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SimpleInterestComponent implements OnInit {
 
-  formulaDefination: FormulaDefination;
+  formulaDefinition: FormulaDefinition;
 
   constructor(
-    private formulaDefinationService: BankingFormulaDefinationService
+    private formulaDefinitionService: BankingFormulaDefinitionService
   ) { }
 
   ngOnInit() {
-    this.formulaDefination = this.formulaDefinationService.getSimpleInterestDef();
+    this.formulaDefinition = this.formulaDefinitionService.getSimpleInterestDef();
   }
 
 }

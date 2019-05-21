@@ -4,14 +4,14 @@ import { CommonModule } from '@angular/common';
 import { FutureValueOfAnnuityDueRoutingModule } from './future-value-of-annuity-due-routing.module';
 import { FutureValueOfAnnuityDueComponent } from './future-value-of-annuity-due.component';
 import { FutureValueOfAnnuityDueCalComponent } from './future-value-of-annuity-due-cal/future-value-of-annuity-due-cal.component';
-import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
+import { FormulaDefinitionModule } from '../../../components/formula-definition/formula-definition.module';
 
 @NgModule({
   declarations: [FutureValueOfAnnuityDueComponent, FutureValueOfAnnuityDueCalComponent],
   imports: [
     CommonModule,
     FutureValueOfAnnuityDueRoutingModule,
-    FormulaDefinationModule
+    FormulaDefinitionModule
   ]
 })
 export class FutureValueOfAnnuityDueModule { }

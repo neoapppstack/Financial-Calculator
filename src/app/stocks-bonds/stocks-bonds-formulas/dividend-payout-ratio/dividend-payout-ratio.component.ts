@@ -1,6 +1,6 @@
-import { FormulaDefination } from './../../../_models/formula/formula-defination';
+import { FormulaDefinition } from './../../../_models/formula/formula-definition';
 import { Component, OnInit } from '@angular/core';
-import { StocksBondsFormulaDefinationService } from './../../../_service/formula/stocks-bonds-defination.service';
+import { StocksBondsFormulaDefinitionService } from '../../../_service/formula/stocks-bonds-definition.service';
 
 @Component({
   selector: 'app-dividend-payout-ratio',
@@ -9,14 +9,14 @@ import { StocksBondsFormulaDefinationService } from './../../../_service/formula
 })
 export class DividendPayoutRatioComponent implements OnInit {
 
-  formulaDefination: FormulaDefination;
+  formulaDefinition: FormulaDefinition;
 
   constructor(
-    private formulaDefinationService: StocksBondsFormulaDefinationService
+    private formulaDefinitionService: StocksBondsFormulaDefinitionService
   ) { }
 
   ngOnInit() {
-    this.formulaDefination = this.formulaDefinationService.getDividendPayoutRatioDef();
+    this.formulaDefinition = this.formulaDefinitionService.getDividendPayoutRatioDef();
   }
 
 }

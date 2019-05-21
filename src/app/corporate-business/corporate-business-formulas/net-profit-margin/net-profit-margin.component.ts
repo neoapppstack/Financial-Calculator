@@ -1,5 +1,5 @@
-import { CorporateFormulaDefinationService } from './../../../_service/formula/corporate-formula-defination.service';
-import { FormulaDefination } from './../../../_models/formula/formula-defination';
+import { CorporateFormulaDefinitionService } from './../../../_service/formula/corporate-formula-definition.service';
+import { FormulaDefinition } from './../../../_models/formula/formula-definition';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,14 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NetProfitMarginComponent implements OnInit {
 
-  formulaDefination: FormulaDefination;
+  formulaDefinition: FormulaDefinition;
 
   constructor(
-    private formulaDefinationService: CorporateFormulaDefinationService
+    private formulaDefinitionService: CorporateFormulaDefinitionService
   ) { }
 
   ngOnInit() {
-    this.formulaDefination = this.formulaDefinationService.getNetProfitMarginDef();
+    this.formulaDefinition = this.formulaDefinitionService.getNetProfitMarginDef();
   }
 
 }

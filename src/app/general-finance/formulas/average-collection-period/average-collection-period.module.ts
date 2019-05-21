@@ -4,14 +4,14 @@ import { CommonModule } from '@angular/common';
 import { AverageCollectionPeriodRoutingModule } from './average-collection-period-routing.module';
 import { AverageCollectionPeriodComponent } from './average-collection-period.component';
 import { AverageCollectionPeriodCalComponent } from './average-collection-period-cal/average-collection-period-cal.component';
-import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
+import { FormulaDefinitionModule } from '../../../components/formula-definition/formula-definition.module';
 
 @NgModule({
   declarations: [AverageCollectionPeriodComponent, AverageCollectionPeriodCalComponent],
   imports: [
     CommonModule,
     AverageCollectionPeriodRoutingModule,
-    FormulaDefinationModule
+    FormulaDefinitionModule
   ]
 })
 export class AverageCollectionPeriodModule { }

@@ -4,14 +4,14 @@ import { CommonModule } from '@angular/common';
 import { EarningsPerShareRoutingModule } from './earnings-per-share-routing.module';
 import { EarningsPerShareComponent } from './earnings-per-share.component';
 import { EarningsPerShareCalComponent } from './earnings-per-share-cal/earnings-per-share-cal.component';
-import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
+import { FormulaDefinitionModule } from '../../../components/formula-definition/formula-definition.module';
 
 @NgModule({
   declarations: [EarningsPerShareComponent, EarningsPerShareCalComponent],
   imports: [
     CommonModule,
     EarningsPerShareRoutingModule,
-    FormulaDefinationModule
+    FormulaDefinitionModule
   ]
 })
 export class EarningsPerShareModule { }

@@ -1,5 +1,5 @@
-import { GeneralFormulaDefinationService } from './../../../_service/formula/general-formula-defination.service';
-import { FormulaDefination } from './../../../_models/formula/formula-defination';
+import { GeneralFormulaDefinitionService } from './../../../_service/formula/general-formula-definition.service';
+import { FormulaDefinition } from './../../../_models/formula/formula-definition';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,12 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnnuityPaymentFromFutureValueComponent implements OnInit {
 
-  formulaDefination: FormulaDefination;
+  formulaDefinition: FormulaDefinition;
 
-  constructor(private formulaDefinationService: GeneralFormulaDefinationService) { }
+  constructor(private formulaDefinitionService: GeneralFormulaDefinitionService) { }
 
   ngOnInit() {
-    this.formulaDefination = this.formulaDefinationService.getAnnuityPaymentFromFutureValueDef();
+    this.formulaDefinition = this.formulaDefinitionService.getAnnuityPaymentFromFutureValueDef();
   }
 
 }

@@ -1,6 +1,6 @@
-import { FormulaDefination } from './../../../_models/formula/formula-defination';
+import { FormulaDefinition } from './../../../_models/formula/formula-definition';
 import { Component, OnInit } from '@angular/core';
-import { StocksBondsFormulaDefinationService } from './../../../_service/formula/stocks-bonds-defination.service';
+import { StocksBondsFormulaDefinitionService } from '../../../_service/formula/stocks-bonds-definition.service';
 
 @Component({
   selector: 'app-current-yield',
@@ -9,14 +9,14 @@ import { StocksBondsFormulaDefinationService } from './../../../_service/formula
 })
 export class CurrentYieldComponent implements OnInit {
 
-  formulaDefination: FormulaDefination;
+  formulaDefinition: FormulaDefinition;
 
   constructor(
-    private formulaDefinationService: StocksBondsFormulaDefinationService
+    private formulaDefinitionService: StocksBondsFormulaDefinitionService
   ) { }
 
   ngOnInit() {
-    this.formulaDefination = this.formulaDefinationService.getCurrentYielddDef()
+    this.formulaDefinition = this.formulaDefinitionService.getCurrentYielddDef()
   }
 
 }

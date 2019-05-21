@@ -4,14 +4,14 @@ import { CommonModule } from '@angular/common';
 import { PresentValueRoutingModule } from './present-value-routing.module';
 import { PresentValueComponent } from './present-value.component';
 import { PresentValueCalComponent } from './present-value-cal/present-value-cal.component';
-import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
+import { FormulaDefinitionModule } from '../../../components/formula-definition/formula-definition.module';
 
 @NgModule({
   declarations: [PresentValueComponent, PresentValueCalComponent],
   imports: [
     CommonModule,
     PresentValueRoutingModule,
-    FormulaDefinationModule
+    FormulaDefinitionModule
   ]
 })
 export class PresentValueModule { }

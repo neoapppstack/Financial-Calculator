@@ -1,4 +1,4 @@
-import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
+import { FormulaDefinitionModule } from '../../../components/formula-definition/formula-definition.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DebtCoverageRatioComponent } from './debt-coverage-ratio.component';
@@ -8,7 +8,7 @@ import { DebtCoverageRatioCalComponent } from './debt-coverage-ratio-cal/debt-co
   declarations: [DebtCoverageRatioComponent, DebtCoverageRatioCalComponent],
   imports: [
     CommonModule,
-    FormulaDefinationModule
+    FormulaDefinitionModule
   ]
 })
 export class DebtCoverageRatioModule { }
