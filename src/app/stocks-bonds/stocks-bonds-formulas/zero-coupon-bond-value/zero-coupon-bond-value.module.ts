@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { ZeroCouponBondValueCalComponent } from './zero-coupon-bond-value-cal/ze
   declarations: [ZeroCouponBondValueComponent, ZeroCouponBondValueCalComponent],
   imports: [
     CommonModule,
-    ZeroCouponBondValueRoutingModule
+    ZeroCouponBondValueRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class ZeroCouponBondValueModule { }

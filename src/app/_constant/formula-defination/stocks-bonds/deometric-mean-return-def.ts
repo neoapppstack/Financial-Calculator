@@ -1,6 +1,6 @@
 import { FormulaDefination } from './../../../_models/formula/formula-defination';
 
-export const EquityMultiplierDef: FormulaDefination = {
+export const DeometricMeanReturnDef: FormulaDefination = {
   id: 1,
   title: 'Geometric Mean Return',
   subtitle: 'Geometric Mean Return',

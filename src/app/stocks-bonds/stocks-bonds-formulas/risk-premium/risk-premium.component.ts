@@ -1,4 +1,6 @@
+import { FormulaDefination } from './../../../_models/formula/formula-defination';
 import { Component, OnInit } from '@angular/core';
+import { StocksBondsFormulaDefinationService } from './../../../_service/formula/stocks-bonds-defination.service';
 
 @Component({
   selector: 'app-risk-premium',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RiskPremiumComponent implements OnInit {
 
-  constructor() { }
+  formulaDefination: FormulaDefination;
+
+  constructor(
+    private formulaDefinationService: StocksBondsFormulaDefinationService
+  ) { }
 
   ngOnInit() {
+    this.formulaDefination = this.formulaDefinationService.getRiskPremiumDef();
   }
 
 }

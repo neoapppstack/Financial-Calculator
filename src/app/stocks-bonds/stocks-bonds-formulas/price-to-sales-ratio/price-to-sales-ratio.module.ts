@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { PriceToSalesRatioCalComponent } from './price-to-sales-ratio-cal/price-
   declarations: [PriceToSalesRatioComponent, PriceToSalesRatioCalComponent],
   imports: [
     CommonModule,
-    PriceToSalesRatioRoutingModule
+    PriceToSalesRatioRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class PriceToSalesRatioModule { }

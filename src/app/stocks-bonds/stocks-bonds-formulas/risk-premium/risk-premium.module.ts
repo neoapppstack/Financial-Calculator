@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { RiskPremiumCalComponent } from './risk-premium-cal/risk-premium-cal.com
   declarations: [RiskPremiumComponent, RiskPremiumCalComponent],
   imports: [
     CommonModule,
-    RiskPremiumRoutingModule
+    RiskPremiumRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class RiskPremiumModule { }

@@ -4,12 +4,14 @@ import { CommonModule } from '@angular/common';
 import { EquityMultiplierRoutingModule } from './equity-multiplier-routing.module';
 import { EquityMultiplierComponent } from './equity-multiplier.component';
 import { EquityMultiplierCalComponent } from './equity-multiplier-cal/equity-multiplier-cal.component';
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 
 @NgModule({
   declarations: [EquityMultiplierComponent, EquityMultiplierCalComponent],
   imports: [
     CommonModule,
-    EquityMultiplierRoutingModule
+    EquityMultiplierRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class EquityMultiplierModule { }

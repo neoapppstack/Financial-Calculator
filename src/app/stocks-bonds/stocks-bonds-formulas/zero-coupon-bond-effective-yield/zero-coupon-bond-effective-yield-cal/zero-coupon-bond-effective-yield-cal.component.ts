@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { FormulaDefination } from './../../../../_models/formula/formula-defination';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-zero-coupon-bond-effective-yield-cal',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./zero-coupon-bond-effective-yield-cal.component.scss']
 })
 export class ZeroCouponBondEffectiveYieldCalComponent implements OnInit {
+
+  @Input() formulaDefination: FormulaDefination;
 
   constructor() { }
 

@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { PvOfStockWithZeroGrowthCalComponent } from './pv-of-stock-with-zero-gro
   declarations: [PvOfStockWithZeroGrowthComponent, PvOfStockWithZeroGrowthCalComponent],
   imports: [
     CommonModule,
-    PvOfStockWithZeroGrowthRoutingModule
+    PvOfStockWithZeroGrowthRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class PvOfStockWithZeroGrowthModule { }

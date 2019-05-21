@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { BidAskSpreadCalComponent } from './bid-ask-spread-cal/bid-ask-spread-ca
   declarations: [BidAskSpreadComponent, BidAskSpreadCalComponent],
   imports: [
     CommonModule,
-    BidAskSpreadRoutingModule
+    BidAskSpreadRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class BidAskSpreadModule { }

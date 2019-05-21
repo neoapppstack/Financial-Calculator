@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { PriceToBookValueCalComponent } from './price-to-book-value-cal/price-to
   declarations: [PriceToBookValueComponent, PriceToBookValueCalComponent],
   imports: [
     CommonModule,
-    PriceToBookValueRoutingModule
+    PriceToBookValueRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class PriceToBookValueModule { }

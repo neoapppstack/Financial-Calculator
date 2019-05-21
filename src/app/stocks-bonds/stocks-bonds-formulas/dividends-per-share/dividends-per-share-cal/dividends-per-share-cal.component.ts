@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { FormulaDefination } from './../../../../_models/formula/formula-defination';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-dividends-per-share-cal',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dividends-per-share-cal.component.scss']
 })
 export class DividendsPerShareCalComponent implements OnInit {
+
+  @Input() formulaDefination: FormulaDefination;
 
   constructor() { }
 

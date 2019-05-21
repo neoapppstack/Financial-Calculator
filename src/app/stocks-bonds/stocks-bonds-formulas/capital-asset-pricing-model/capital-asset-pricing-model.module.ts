@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { CapitalAssetPricingModelCalComponent } from './capital-asset-pricing-mo
   declarations: [CapitalAssetPricingModelComponent, CapitalAssetPricingModelCalComponent],
   imports: [
     CommonModule,
-    CapitalAssetPricingModelRoutingModule
+    CapitalAssetPricingModelRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class CapitalAssetPricingModelModule { }
