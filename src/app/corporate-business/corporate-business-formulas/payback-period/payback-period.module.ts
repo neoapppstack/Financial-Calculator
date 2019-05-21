@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { PaybackPeriodCalComponent } from './payback-period-cal/payback-period-c
   declarations: [PaybackPeriodComponent, PaybackPeriodCalComponent],
   imports: [
     CommonModule,
-    PaybackPeriodRoutingModule
+    PaybackPeriodRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class PaybackPeriodModule { }

@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { NetWorkingCapitalCalComponent } from './net-working-capital-cal/net-wor
   declarations: [NetWorkingCapitalComponent, NetWorkingCapitalCalComponent],
   imports: [
     CommonModule,
-    NetWorkingCapitalRoutingModule
+    NetWorkingCapitalRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class NetWorkingCapitalModule { }

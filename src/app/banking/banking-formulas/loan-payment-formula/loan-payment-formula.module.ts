@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { LoanPaymentFormulaCalComponent } from './loan-payment-formula-cal/loan-
   declarations: [LoanPaymentFormulaComponent, LoanPaymentFormulaCalComponent],
   imports: [
     CommonModule,
-    LoanPaymentFormulaRoutingModule
+    LoanPaymentFormulaRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class LoanPaymentFormulaModule { }

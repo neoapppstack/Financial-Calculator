@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { LoanToValueRatioCalComponent } from './loan-to-value-ratio-cal/loan-to-
   declarations: [LoanToValueRatioComponent, LoanToValueRatioCalComponent],
   imports: [
     CommonModule,
-    LoanToValueRatioRoutingModule
+    LoanToValueRatioRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class LoanToValueRatioModule { }

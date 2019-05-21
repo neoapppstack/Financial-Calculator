@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { ContinuousCompoundingCalComponent } from './continuous-compounding-cal/
   declarations: [ContinuousCompoundingComponent, ContinuousCompoundingCalComponent],
   imports: [
     CommonModule,
-    ContinuousCompoundingRoutingModule
+    ContinuousCompoundingRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class ContinuousCompoundingModule { }

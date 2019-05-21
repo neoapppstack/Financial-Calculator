@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { AssetToSalesRatioCalComponent } from './asset-to-sales-ratio-cal/asset-
   declarations: [AssetToSalesRatioComponent, AssetToSalesRatioCalComponent],
   imports: [
     CommonModule,
-    AssetToSalesRatioRoutingModule
+    AssetToSalesRatioRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class AssetToSalesRatioModule { }

@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { InventoryTurnoverRatioCalComponent } from './inventory-turnover-ratio-c
   declarations: [InventoryTurnoverRatioComponent, InventoryTurnoverRatioCalComponent],
   imports: [
     CommonModule,
-    InventoryTurnoverRatioRoutingModule
+    InventoryTurnoverRatioRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class InventoryTurnoverRatioModule { }

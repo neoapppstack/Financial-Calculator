@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { FreeCashFlowToFirmCalComponent } from './free-cash-flow-to-firm-cal/fre
   declarations: [FreeCashFlowToFirmComponent, FreeCashFlowToFirmCalComponent],
   imports: [
     CommonModule,
-    FreeCashFlowToFirmRoutingModule
+    FreeCashFlowToFirmRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class FreeCashFlowToFirmModule { }

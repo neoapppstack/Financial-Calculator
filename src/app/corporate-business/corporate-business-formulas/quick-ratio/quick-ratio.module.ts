@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { QuickRatioCalComponent } from './quick-ratio-cal/quick-ratio-cal.compon
   declarations: [QuickRatioComponent, QuickRatioCalComponent],
   imports: [
     CommonModule,
-    QuickRatioRoutingModule
+    QuickRatioRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class QuickRatioModule { }

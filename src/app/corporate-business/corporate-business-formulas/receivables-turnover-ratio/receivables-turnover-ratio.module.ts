@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { ReceivablesTurnoverRatioCalComponent } from './receivables-turnover-rat
   declarations: [ReceivablesTurnoverRatioComponent, ReceivablesTurnoverRatioCalComponent],
   imports: [
     CommonModule,
-    ReceivablesTurnoverRatioRoutingModule
+    ReceivablesTurnoverRatioRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class ReceivablesTurnoverRatioModule { }

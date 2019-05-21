@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { EquivalentAnnualAnnuityCalComponent } from './equivalent-annual-annuity
   declarations: [EquivalentAnnualAnnuityComponent, EquivalentAnnualAnnuityCalComponent],
   imports: [
     CommonModule,
-    EquivalentAnnualAnnuityRoutingModule
+    EquivalentAnnualAnnuityRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class EquivalentAnnualAnnuityModule { }

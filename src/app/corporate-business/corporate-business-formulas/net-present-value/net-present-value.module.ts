@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { NetPresentValueCalComponent } from './net-present-value-cal/net-present
   declarations: [NetPresentValueComponent, NetPresentValueCalComponent],
   imports: [
     CommonModule,
-    NetPresentValueRoutingModule
+    NetPresentValueRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class NetPresentValueModule { }

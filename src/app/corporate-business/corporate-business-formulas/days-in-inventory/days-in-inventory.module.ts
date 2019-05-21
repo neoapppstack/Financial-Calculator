@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { DaysInInventoryCalComponent } from './days-in-inventory-cal/days-in-inv
   declarations: [DaysInInventoryComponent, DaysInInventoryCalComponent],
   imports: [
     CommonModule,
-    DaysInInventoryRoutingModule
+    DaysInInventoryRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class DaysInInventoryModule { }

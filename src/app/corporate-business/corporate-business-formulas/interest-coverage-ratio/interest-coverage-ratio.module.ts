@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { InterestCoverageRatioCalComponent } from './interest-coverage-ratio-cal
   declarations: [InterestCoverageRatioComponent, InterestCoverageRatioCalComponent],
   imports: [
     CommonModule,
-    InterestCoverageRatioRoutingModule
+    InterestCoverageRatioRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class InterestCoverageRatioModule { }

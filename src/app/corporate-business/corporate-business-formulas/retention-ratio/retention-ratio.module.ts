@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { RetentionRatioCalComponent } from './retention-ratio-cal/retention-rati
   declarations: [RetentionRatioComponent, RetentionRatioCalComponent],
   imports: [
     CommonModule,
-    RetentionRatioRoutingModule
+    RetentionRatioRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class RetentionRatioModule { }

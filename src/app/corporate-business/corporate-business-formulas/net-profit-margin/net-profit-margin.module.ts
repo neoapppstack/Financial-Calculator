@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { NetProfitMarginCalComponent } from './net-profit-margin-cal/net-profit-
   declarations: [NetProfitMarginComponent, NetProfitMarginCalComponent],
   imports: [
     CommonModule,
-    NetProfitMarginRoutingModule
+    NetProfitMarginRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class NetProfitMarginModule { }

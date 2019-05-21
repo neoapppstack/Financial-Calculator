@@ -1,3 +1,4 @@
+import { FormulaDefinationModule } from './../../../components/formula-defination/formula-defination.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { RemainingBalanceFormulaCalComponent } from './remaining-balance-formula
   declarations: [RemainingBalanceFormulaComponent, RemainingBalanceFormulaCalComponent],
   imports: [
     CommonModule,
-    RemainingBalanceFormulaRoutingModule
+    RemainingBalanceFormulaRoutingModule,
+    FormulaDefinationModule
   ]
 })
 export class RemainingBalanceFormulaModule { }
